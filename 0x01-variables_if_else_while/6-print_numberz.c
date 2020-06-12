@@ -11,11 +11,11 @@ int main(void)
 {
 	int x;
 
-	x = 0;
+	x = 48;
 
-	while (x <= 9)
+	while (x <= 57)
 	{
-		printf("%i", x);
+		putchar(x);
 		++x;
 	}
 
