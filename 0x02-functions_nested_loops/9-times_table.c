@@ -2,11 +2,12 @@
 
 /**
 * table - print table
-* @n: integer
+* @t: integer
 */
 void table(int t)
 {
-	int m,r;
+	int m, r;
+
 	for (m = 0; m <= 9; m++)
 	{
 		r = t * m;
@@ -53,7 +54,7 @@ void times_table(void)
 	for (t = 0; t <= 9; t++)
 	{
 		table(t);
-		_putchar('\n');
+		_putchar ('\n');
 	}
 
 
