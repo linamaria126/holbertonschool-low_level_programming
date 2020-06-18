@@ -16,20 +16,7 @@ void times_table(void)
 		{
 			r = t*m;
 
-			if(r > 9){
-
-				_putchar ('0' + r / 10);
-				_putchar ('0' + r % 10);
-
-			}
-			else
-			{
-					_putchar ('0' + r);
-			}
-
-			if(m != 9)
-			{
-				_putchar(',');
+			if(m != 0){
 
 				if(r > 9)
 				{
@@ -40,7 +27,24 @@ void times_table(void)
 					_putchar(' ');
 					_putchar(' ');
 				}
+
 			}
+
+			if(r > 9){
+
+				_putchar ('0' + r / 10);
+				_putchar ('0' + r % 10);
+
+			}
+			else
+			{
+				_putchar ('0' + r);
+			}
+
+			if(m != 9){
+				_putchar(',');
+			}
+
 
 		}
 
